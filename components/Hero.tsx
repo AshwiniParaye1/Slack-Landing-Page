@@ -17,43 +17,45 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                className="bg-[#611f69] hover:bg-purple-800 text-white"
+                className="bg-[#611f69] hover:bg-[#400d40] text-white h-12 rounded-[3px] text-xs"
               >
                 TRY FOR FREE
               </Button>
+
               <Button
                 size="lg"
                 variant="outline"
-                className="border-gray-300 bg-white hover:bg-gray-50"
+                className="border-gray-300 text-gray-200 bg-blue-500 hover:bg-gray-50 h-12 rounded-[3px] p-1"
               >
                 <Image
-                  src="/placeholder.svg?height=20&width=20"
+                  src="/google.png"
                   alt="Google"
-                  width={20}
-                  height={20}
-                  className="mr-2 h-5 w-5"
+                  width={10}
+                  height={10}
+                  className="h-10 w-11 rounded-none bg-white "
                 />
-                SIGN UP WITH GOOGLE
+                <p className="pr-4 text-xs"> SIGN UP WITH GOOGLE</p>
               </Button>
             </div>
           </div>
-          <div className="relative">
-            <div className="relative">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-1 z-10">
-                <div className="flex items-center gap-1 bg-yellow-50 rounded-full px-2 py-1">
+
+          <div className="relative max-w-xl">
+            <div className="relative ">
+              <div className="absolute -top-6 left-1/4 transform -translate-x-1/2 bg-white rounded-full p-1 z-10 border-[0.2px]">
+                <div className="flex items-center gap-1 bg-white rounded-full px-4">
                   <span className="text-yellow-500 text-lg">👍</span>
                   <span className="font-bold">3</span>
                 </div>
               </div>
-              <div className="bg-purple-900 rounded-lg overflow-hidden shadow-xl">
-                <div className="flex items-center gap-1 px-2 pt-1">
+              <div className="bg-[#611f69] rounded-lg overflow-hidden shadow-xl">
+                <div className="flex items-center gap-1 bg-[#400d40] p-2">
                   <div className="h-3 w-3 rounded-full bg-red-500"></div>
                   <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
                   <div className="h-3 w-3 rounded-full bg-green-500"></div>
                 </div>
                 <div className="flex">
                   {/* Left sidebar */}
-                  <div className="w-48 bg-purple-900 text-white p-3">
+                  <div className="w-48 bg-[#611f69] text-white p-3">
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center gap-1">
                         <svg
@@ -68,26 +70,26 @@ export default function Hero() {
                             clipRule="evenodd"
                           />
                         </svg>
-                        <span className="font-medium">Channels</span>
+                        <span className="font-light">Channels</span>
                       </div>
-                      <span className="text-lg">+</span>
+                      <span className="font-light">+</span>
                     </div>
-                    <div className="bg-blue-700 rounded py-1 px-2">
+                    <div className="bg-[#2a6eb7] rounded px-2 py-1">
                       <div className="flex items-center">
-                        <span className="text-blue-300 mr-2">#</span>
-                        <span className="text-white">project-unicorn</span>
+                        <span className="text-gray-100 mr-2">#</span>
+                        <span className="text-gray-100">project-unicorn</span>
                       </div>
                     </div>
-                    <div className="absolute bottom-4 left-4">
-                      <div className="flex items-center gap-1 bg-white rounded-full px-2 py-1">
-                        <span className="text-blue-400 text-sm">💬</span>
+                    <div className="absolute bottom-1/4 -left-5">
+                      <div className="flex items-center gap-1 bg-white rounded-full  px-4 py-1 border-[0.2px]">
+                        <span className="text-blue-400 text-sm">🎉</span>
                         <span className="font-bold text-gray-800">5</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Main content */}
-                  <div className="flex-1 bg-white p-3">
+                  <div className="flex-1 bg-white p-3 pb-10">
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center">
                         <span className="font-bold text-gray-800 mr-2">
@@ -95,11 +97,18 @@ export default function Hero() {
                         </span>
                       </div>
                       <div className="flex -space-x-2">
-                        {[1, 2, 3, 4].map((i) => (
+                        {[1, 2, 3, 4, 5].map((i) => (
                           <div
                             key={i}
-                            className="h-6 w-6 rounded-full bg-gray-300 border-2 border-white"
-                          ></div>
+                            className="h-6 w-6 rounded-sm bg-gray-300 border-2 border-white overflow-hidden gap-2"
+                          >
+                            <Image
+                              src="/user.jpg"
+                              alt="user"
+                              width={20}
+                              height={20}
+                            />
+                          </div>
                         ))}
                       </div>
                     </div>
@@ -109,14 +118,14 @@ export default function Hero() {
                       <div className="flex items-start gap-3">
                         <div className="h-8 w-8 rounded-full bg-gray-300 flex-shrink-0 overflow-hidden">
                           <Image
-                            src="/placeholder.svg?height=32&width=32"
+                            src="/user.jpg"
                             alt="Zoe Maxwell"
                             width={32}
                             height={32}
                           />
                         </div>
                         <div>
-                          <div className="font-medium text-gray-800">
+                          <div className="font-semibold text-gray-800">
                             Zoe Maxwell
                           </div>
                           <p className="text-gray-600">
@@ -129,24 +138,24 @@ export default function Hero() {
                       <div className="flex items-start gap-3">
                         <div className="h-8 w-8 rounded-full bg-gray-300 flex-shrink-0 overflow-hidden">
                           <Image
-                            src="/placeholder.svg?height=32&width=32"
+                            src="/user.jpg"
                             alt="Matt Brewer"
                             width={32}
                             height={32}
                           />
                         </div>
                         <div className="flex-1">
-                          <div className="font-medium text-gray-800">
+                          <div className="font-semibold text-gray-800">
                             Matt Brewer
                           </div>
                           <p className="text-gray-600">
                             Here&apos;s the run of show:
                           </p>
-                          <div className="mt-1 border border-gray-200 rounded p-2 flex items-center gap-2">
+                          <div className="mt-2 border border-gray-200 rounded p-2 flex items-center gap-2 w-60">
                             <div className="h-5 w-5 bg-blue-100 rounded flex items-center justify-center">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-3 w-3 text-blue-600"
+                                className="h-8 w-8 text-blue-400"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -162,8 +171,8 @@ export default function Hero() {
                             <div className="h-2 w-32 bg-gray-200 rounded"></div>
                           </div>
                         </div>
-                        <div className="absolute right-12">
-                          <div className="flex items-center gap-1 bg-yellow-50 rounded-full px-2 py-1">
+                        <div className="absolute -right-6  bottom-24">
+                          <div className="flex items-center gap-1 bg-white  border-[0.5px] rounded-full px-4 py-1">
                             <span className="text-yellow-500 text-lg">💡</span>
                             <span className="font-bold">8</span>
                           </div>
@@ -171,9 +180,9 @@ export default function Hero() {
                       </div>
                     </div>
 
-                    <div className="absolute bottom-4 right-12">
-                      <div className="flex items-center gap-1 bg-gray-100 rounded-full px-2 py-1">
-                        <span className="text-gray-500 text-xs">• •</span>
+                    <div className="absolute bottom-4 right-20">
+                      <div className="flex items-center gap-1  bg-white border-[0.5px] rounded-full px-4 py-1">
+                        <span className="text-xs">👀</span>
                         <span className="font-bold text-gray-800">5</span>
                       </div>
                     </div>

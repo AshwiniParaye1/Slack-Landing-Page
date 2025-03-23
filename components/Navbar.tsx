@@ -72,7 +72,7 @@ export default function Navbar() {
           >
             TALK TO SALES
           </Button>
-          <Button className="bg-[#611f69] hover:bg-purple-800 text-white">
+          <Button className="bg-[#611f69] hover:bg-[#400d40] text-white">
             TRY FOR FREE
           </Button>
         </div>

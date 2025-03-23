@@ -23,7 +23,7 @@ export default function CookieConsent() {
               <X className="h-5 w-5" />
             </button>
           </div>
-          <Button className="w-full bg-[#611f69] hover:bg-purple-800 text-white">
+          <Button className="w-full bg-[#611f69] hover:bg-[#400d40] text-white">
             ACCEPT ALL COOKIES
           </Button>
         </div>
