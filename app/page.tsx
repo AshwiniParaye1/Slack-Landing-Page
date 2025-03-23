@@ -7,7 +7,7 @@ import Notification from "@/components/Notification";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white px-10">
+    <div className="min-h-screen bg-white px-16">
       {/* Navigation */}
       <Navbar />
 
