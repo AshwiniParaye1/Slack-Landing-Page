@@ -13,15 +13,15 @@ export default function Carousel() {
 
   return (
     <section className="container py-12">
-      <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
+      <div className="flex flex-wrap justify-center items-center gap-12 md:gap-14">
         {logos.map((logo, index) => (
           <div key={index}>
             <Image
               src={logo}
               alt={`Logo ${index + 1}`}
               width={120} // Set a fixed width or adjust dynamically
-              height={40}
-              className="h-8 md:h-10"
+              height={60}
+              className="h-10 md:h-10"
             />
           </div>
         ))}
